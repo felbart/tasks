@@ -1,6 +1,10 @@
+import Header from "../components/Layout/Header"
+
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <section className="flex-1 overflow-auto relative z-10">
+    <Header title="Perfil"/>
+    </section>
   )
 }
 

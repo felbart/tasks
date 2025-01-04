@@ -1,20 +1,21 @@
 import PropTypes from "prop-types";
-import Sidebar from "../components/Layout/Sidebar";
+import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import Sidebar from "../components/Layout/Sidebar";
 
-
-const DefaultLayout = ({ children }) => {
+const DashboardLayout = ({ children }) => {
   return (
     <>
-        <Header />
-        <Sidebar />
-        <main>{children}</main>
+      <Header />
+      <Sidebar />
+      <main>{children}</main>
+      <Footer />
     </>
   );
 };
 
-DefaultLayout.propTypes = {
-  children: PropTypes.node.isRequired, // Valida que 'children' é um nó React e é obrigatório
+DashboardLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
-export default DefaultLayout;
+export default DashboardLayout;
